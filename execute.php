@@ -45,7 +45,7 @@ if(isset($message['text']))
 	
   if(strpos($text, "/start") === 0 )
   {
-	$response = "Ciao $firstname! \n\n Inviami qui il link Amazon e ti risponderò con il nostro link personalizzato\n\nGrazie!\n\nComputer Experience 2.0 Srl";
+	$response = "Ciao $firstname! \n\nInviami il link Amazon e ti risponderò con il nostro link personalizzato\n\nGrazie!\nComputer Experience 2.0 Srl";
   }
   elseif($dominioAmazon == "amazon")
   {	  

@@ -45,7 +45,7 @@ if(isset($message['text']))
 	
   if(strpos($text, "/start") === 0 )
   {
-	$response = "Ciao $firstname! \nMandami un link Amazon o condividilo direttamente con me da altre app! \nTi rispondero' con il link affiliato del mio padrone! Grazie mille!\n\nCreated by http://www.webemento.com";
+	$response = "Ciao $firstname! \n\n Inviami qui il link Amazon e ti risponderò con il nostro link personalizzato\n\nGrazie!\n\nComputer Experience 2.0 Srl";
   }
   elseif($dominioAmazon == "amazon")
   {	  
@@ -87,7 +87,7 @@ if(isset($message['text']))
 * prende un link amazon, estrapola l'ASIN e ricrea un link allo stesso prodotto con il referral 
 */
 function set_referral_URL($url){
-	$referral = "miketama-21";
+	$referral = "computerexper-21";
 	$url_edited = "";
 	$parsed_url_array = parse_url($url);
 	

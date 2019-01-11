@@ -45,7 +45,8 @@ if(isset($message['text']))
 	
   if(strpos($text, "/start") === 0 )
   {
-	$response = "Ciao $firstname! \n\nInviami il link Amazon e ti risponderò con il nostro link personalizzato\n\nGrazie!\nComputer Experience 2.0 Srl";
+	//$response = "Ciao $firstname! \n\nInviami il link Amazon e ti risponderò con il nostro link personalizzato\n\nGrazie!\nComputer Experience 2.0 Srl";
+    $response = "Ciao $firstname e grazie per essere qui. \n\nPer ragioni tecniche abbiamo momentaneamente disattivato le funzionalità del bot. Procedi all'acquisto del tuo prodotto in maniera diretta come hai sempre fatto";
   }
   elseif($dominioAmazon == "amazon")
   {	  
@@ -95,7 +96,7 @@ function set_referral_URL($url){
 	
 	$parsed = extract_unit($fullstring, 'm=', '&');
 	$seller = "&".$seller;
-	$url_edited = "https://www.amazon.it".$parsed_url_array['path']."?tag=".$referral.$seller;
+	$url_edited = "Ciao $firstname e grazie per essere qui. \n\nPer ragioni tecniche abbiamo momentaneamente disattivato le funzionalità del bot. Procedi all'acquisto del tuo prodotto in maniera diretta come hai sempre fatto";
 	return $url_edited;
 }
 /*
